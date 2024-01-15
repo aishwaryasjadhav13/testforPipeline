@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script {
                     withEnv(["PATH+ANT=${env.ANT_HOME}/bin"]) {
-                        dir('C:\Users\2273434\Documents\SavvasProjectWithGit\project1\gitTesting\ANT') {
+                        dir('C:/Users/2273434/Documents/SavvasProjectWithGit/project1/gitTesting/ANT') {
                             sh 'cat unpackaged/package.xml'
                             sh 'ant -f retrieveUnpackaged'
                             sh 'ant -f deployUnpackaged'
